@@ -1,5 +1,8 @@
 package edu.clayton.csit.antlab.person;
-
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -31,7 +34,14 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+          List<Character>alpha = input.chars().mapToObj(c->(char)c).collect(Collectors.toList());
+          StringBuilder ans = new StringBuilder();
+          IntStream.range(0,input.length()).forEach((index) -> {
+            int rand = new Random().nextInt(alpha.size());
+            ans.append(alpha.get(rand));
+            alpha.remove(rand);
+         });
+         return ans.toString();
 	}
 	/**
 	 * Return a string rep of this object
