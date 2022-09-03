@@ -30,8 +30,17 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+		char[] modChar = new char[input.length()];
+     		for(int i = 0; i < input.length(); i++){
+         		if(i<2){
+            			modChar[input.length()-(2-i)] = input.charAt(i);
+         		}
+         		else{
+           	 		modChar[i-2] = input.charAt(i);
+         		}
+     		}
+     		String modName = new String(modChar);
+	  	return modName;
 	}
 	
 	/**
