@@ -57,23 +57,23 @@ import edu.clayton.csit.antlab.pkg2.*;
           + ant22.getMessage() + ant31.getMessage();
 		  //Person1 replace P1 with your name
 		  //and csuLaker1 with your laker id
-		  Person1 p1 = new Person1("P1");
-		  toPrint += p1.toString("csuLaker1");
+		  Person1 p1 = new Person1("Kevin");
+		  toPrint += p1.toString("900729155");
 		  //Person2 replace P2 with your name
 		  //and csuLaker with your laker id
 		  Person2 p2 = new Person2("P2");
 		  toPrint += p2.toString("csuLaker2");
 		  //Person3 replace P3 with your name
 		  //and csuLaker3 with your laker id
-		  Person3 p3 = new Person3("P3");
+		  Person3 p3 = new Person3("Cory");
 		  toPrint += p3.toString("csuLaker3");
                   //Person4 replace P4 with your name
                   //and csuLaker4 with your laker id
-                  Person4 p4 = new Person4("P4");
+                  Person4 p4 = new Person4("Landon");
                   toPrint += p4.toString("csuLaker4");
                   //Person5 replace P4 with your name
                   //and csuLaker5 with your laker id
-                  Person5 p5 = new Person5("P5");
+                  Person5 p5 = new Person5("Max");
                   toPrint += p5.toString("csuLaker5");
 		  
         System.out.println(toPrint);
